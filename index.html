@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-image">
+            <img src="https://th.bing.com/th/id/OIP.NZb77osoS40-49NtltPQTgHaD0?w=327&h=179&c=7&r=0&o=5&pid=1.7"
+                alt="Banner de Desarrollo Web">
+        </div>
+        <h1>Blog de Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+                <li><a href="#about">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content">
+            <article>
+                <h2>Bienvenidos al Blog de Desarrollo Web</h2>
+                <p>¡Bienvenidos al Blog de Desarrollo Web! Aquí encontrarás recursos, guías y tutoriales para ayudarte a
+                    dominar las tecnologías web más modernas. Ya sea que estés comenzando tu viaje en el mundo del
+                    desarrollo web o busques profundizar tus conocimientos en HTML, CSS, JavaScript y frameworks
+                    avanzados como Svelte, estás en el lugar correcto. Nuestro objetivo es proporcionarte contenido
+                    claro y práctico que puedas aplicar directamente en tus proyectos. ¡Acompáñanos en esta emocionante
+                    aventura y conviértete en un experto en desarrollo web!</p>
+            </article>
+
+            <article>
+                <img src="https://via.placeholder.com/800x100?text=HTML" alt="Imagen de HTML">
+                <h2>Introducción a HTML</h2>
+                <p>La creación de sitios web modernos y dinámicos comienza con una base sólida: HTML. HTML, o Lenguaje
+                    de Marcado de Hipertexto, es el lenguaje estándar para diseñar y estructurar el contenido en la web.
+                    Si estás comenzando tu viaje en el desarrollo web, entender HTML es el primer paso esencial.</p>
+                <h3>¿Qué es HTML?</h3>
+                <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la web. A
+                    diferencia de los lenguajes de programación como JavaScript o Python, HTML no tiene lógica ni
+                    funcionalidad por sí mismo. En cambio, define la estructura y el diseño de una página web utilizando
+                    una serie de elementos y atributos.</p>
+                <h3>La Estructura Básica de un Documento HTML</h3>
+                <p>Un documento HTML típico comienza con la declaración del tipo de documento
+                    (<code>&lt;!DOCTYPE html&gt;</code>) y está compuesto por varios elementos anidados. Aquí hay un
+                    <!-- &lt; representa < y &gt; representa > -->
+                    ejemplo de la estructura básica:
+                </p>
+                <pre><code> <!-- <pre> y <code> se utilizan juntos para mostrar bloques de código con formato específico. -->
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="es"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Mi Primera Página Web&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+                        &lt;p&gt;Bienvenido a mi primera página web.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+                <h4>Desglose de la Estructura</h4>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Esta declaración define el tipo de documento y asegura que
+                        el navegador interprete el contenido como HTML5.</li>
+                    <li><code>&lt;html lang="es"&gt;</code>: El elemento <code>&lt;html&gt;</code> es el contenedor raíz
+                        de todo el documento. El atributo <code>lang</code> especifica el idioma del contenido.</li>
+                    <li><code>&lt;head&gt;</code>: El elemento <code>&lt;head&gt;</code> contiene metadatos sobre el
+                        documento, como el conjunto de caracteres (<code>&lt;meta charset="UTF-8"&gt;</code>), la
+                        configuración de la vista
+                        (<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>), y
+                        el título de la página (<code>&lt;title&gt;</code>).</li>
+                    <li><code>&lt;body&gt;</code>: El elemento <code>&lt;body&gt;</code> contiene todo el contenido
+                        visible de la página web, como encabezados (<code>&lt;h1&gt;</code>), párrafos
+                        (<code>&lt;p&gt;</code>), imágenes (<code>&lt;img&gt;</code>), enlaces (<code>&lt;a&gt;</code>),
+                        y más.</li>
+                </ul>
+                <h3>Elementos Comunes de HTML</h3>
+                <p>A medida que profundices en HTML, te encontrarás con muchos elementos y atributos que te permitirán
+                    crear estructuras complejas. Aquí hay algunos de los elementos más comunes:
+                </p>
+                <ul>
+                    <li><strong>Encabezados</strong>: <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para títulos y
+                        subtítulos.</li>
+                    <li><strong>Párrafos</strong>: <code>&lt;p&gt;</code> para bloques de texto.</li>
+                    <li><strong>Enlaces</strong>: <code>&lt;a href="url"&gt;</code> para crear hipervínculos.</li>
+                    <li><strong>Imágenes</strong>: <code>&lt;img src="ruta" alt="descripción"&gt;</code> para insertar
+                        imágenes.</li>
+                    <li><strong>Listas</strong>: <code>&lt;ul&gt;</code> (no ordenada) y <code>&lt;ol&gt;</code>
+                        (ordenada) con <code>&lt;li&gt;</code> para elementos de lista.</li>
+                    <li><strong>Divisiones y secciones</strong>: <code>&lt;div&gt;</code> y <code>&lt;section&gt;</code>
+                        para agrupar contenido.</li>
+                </ul>
+
+            </article>
+
+            <article>
+                <img src="https://via.placeholder.com/800x100?text=CSS" alt="Imagen de CSS">
+                <h2>CSS: Dando estilo a tu web</h2>
+                <p>Si HTML es el esqueleto de una página web, CSS (Hojas de Estilo en Cascada) es la piel que le da vida
+                    y color. CSS se utiliza para controlar la presentación de un documento escrito en HTML o XML,
+                    permitiendo separar el contenido de la presentación y proporcionando un control total sobre el
+                    diseño visual de una página web.</p>
+                <h3>¿Qué es CSS?</h3>
+                <p>CSS es un lenguaje de diseño que describe la presentación de un documento estructurado en HTML o XML.
+                    Permite aplicar estilos como colores, fuentes, y espaciado a los elementos de la página, y también
+                    manejar el diseño y la disposición de los mismos.</p>
+                <h3>La Estructura Básica de una Regla CSS</h3>
+                <p>Una regla CSS está compuesta por un selector y una declaración. El selector indica qué elementos HTML
+                    serán estilizados, y la declaración define cómo serán estilizados esos elementos. Aquí hay un
+                    ejemplo básico:</p>
+                <pre><code>
+                    h1 {
+                        color: blue;
+                        font-size: 24px;
+                    }
+                    </code></pre>
+
+                <h4>Desglose de la Regla CSS</h4>
+                <ul>
+                    <li><code>h1</code>: El selector que indica que esta regla CSS se aplicará a todos los elementos
+                        <code>&lt;h1&gt;</code> en el documento.
+                    </li>
+                    <li><code>color: blue;</code>: Una declaración que establece el color del texto de los elementos
+                        <code>&lt;h1&gt;</code> en azul.
+                    </li>
+                    <li><code>font-size: 24px;</code>: Otra declaración que establece el tamaño de la fuente de los
+                        elementos <code>&lt;h1&gt;</code> en 24 píxeles.</li>
+                </ul>
+
+                <h3>Metodologías de Inclusión de CSS</h3>
+                <p>Existen varias formas de incluir CSS en un documento HTML:</p>
+                <h4>CSS en Línea</h4>
+                <p>Se utiliza el atributo <code>style</code> directamente en el elemento HTML. Este método no se
+                    recomienda para estilos grandes debido a la falta de separación entre el contenido y el diseño.</p>
+                <pre><code>&lt;h1 style="color: blue; font-size: 24px;"&gt;Título en Azul&lt;/h1&gt;</code></pre>
+                <h4>CSS Interno</h4>
+                <p>Se incluye dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> del
+                    documento HTML. Es útil para estilos específicos de una sola página.</p>
+                <pre><code>
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            h1 {
+                                color: blue;
+                                font-size: 24px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    </code></pre>
+                <h4>CSS Externo</h4>
+                <p>Se escribe en un archivo separado con extensión .css y se vincula al documento HTML mediante la
+                    etiqueta <code>&lt;link&gt;</code>. Este es el método más recomendado para proyectos grandes y para
+                    mantener un código limpio y organizado.</p>
+                <pre><code>
+                    &lt;head&gt;
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    &lt;/head&gt;
+                    </code></pre>
+                <h3>Propiedades Comunes de CSS</h3>
+                <p>A continuación, algunas de las propiedades CSS más comunes:</p>
+                <ul>
+                    <li><strong>Color</strong>: <code>color</code>, <code>background-color</code></li>
+                    <li><strong>Texto</strong>: <code>font-family</code>, <code>font-size</code>,
+                        <code>text-align</code>, <code>text-decoration</code>
+                    </li>
+                    <li><strong>Espaciado</strong>: <code>margin</code>, <code>padding</code></li>
+                    <li><strong>Diseño</strong>: <code>display</code>, <code>position</code>, <code>flex</code>,
+                        <code>grid</code>
+                    </li>
+                    <li><strong>Otros</strong>: <code>border</code>, <code>width</code>, <code>height</code></li>
+                </ul>
+            </article>
+
+            <article>
+                <img src="https://via.placeholder.com/800x100?text=JavaScript" alt="Imagen de JavaScript">
+                <h2>JavaScript: Añadiendo interactividad</h2>
+                <p>Si HTML es el esqueleto y CSS la piel, JavaScript es el cerebro que añade interactividad a tu página
+                    web. JavaScript es un lenguaje de programación que permite implementar características complejas en
+                    las páginas web, como formularios interactivos, animaciones, y comunicación en tiempo real con
+                    servidores.</p>
+                <h3>¿Qué es JavaScript?</h3>
+                <p>JavaScript es un lenguaje de programación interpretado que se ejecuta en el navegador del usuario.
+                    Permite manipular el Document Object Model (DOM), respondiendo a eventos y creando experiencias de
+                    usuario dinámicas y atractivas.</p>
+                <h3>La Estructura Básica de un Script JavaScript</h3>
+                <p>Un script JavaScript puede incluirse directamente en el archivo HTML o en un archivo separado. Aquí
+                    hay un ejemplo básico de un script que muestra un mensaje en la consola del navegador:</p>
+                <pre><code>
+                    &lt;script&gt;
+                        console.log("¡Hola, mundo!");
+                    &lt;/script&gt;
+                </code></pre>
+                <h4>Desglose del Script JavaScript</h4>
+                <ul>
+                    <li><code>&lt;script&gt;</code>: La etiqueta que contiene el código JavaScript. Puede colocarse en
+                        el <code>&lt;head&gt;</code> o al final del <code>&lt;body&gt;</code>.</li>
+                    <li><code>console.log("¡Hola, mundo!");</code>: Un comando que imprime un mensaje en la consola del
+                        navegador, útil para depuración.</li>
+                </ul>
+                <h3>Metodologías de Inclusión de JavaScript</h3>
+                <p>Existen varias formas de incluir JavaScript en un documento HTML:</p>
+                <h4>JavaScript en Línea</h4>
+                <p>Se utiliza el atributo <code>onclick</code> directamente en un elemento HTML. Este método es útil
+                    para pequeños scripts, pero no se recomienda para aplicaciones más complejas.</p>
+                <h4>JavaScript Interno</h4>
+                <p>Se incluye dentro de una etiqueta <code>&lt;script&gt;</code> en el documento HTML. Es útil para
+                    scripts específicos de una sola página.</p>
+                <pre><code>
+                &lt;head&gt;
+                    &lt;script&gt;
+                        function greet() {
+                            alert('¡Hola, mundo!');
+                        }
+                    &lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;button onclick="greet()"&gt;Haz clic&lt;/button&gt;
+                &lt;/body&gt;
+                </code></pre>
+                <h4>JavaScript Externo</h4>
+                <p>Se escribe en un archivo separado con extensión .js y se vincula al documento HTML mediante la
+                    etiqueta <code>&lt;script&gt;</code>. Este es el método más recomendado para mantener un código
+                    limpio y organizado.</p>
+                <pre><code>
+                    &lt;head&gt;
+                        &lt;script src="script.js"&gt;&lt;/script&gt;
+                    &lt;/head&gt;
+                    </code></pre>
+                <h3>Funciones y Eventos en JavaScript</h3>
+                <p>A continuación, algunos conceptos clave de JavaScript:</p>
+                <h4>Funciones</h4>
+                <p>Una función es un bloque de código diseñado para realizar una tarea específica. Se define utilizando
+                    la palabra clave <code>function</code>.</p>
+
+                <pre><code>
+                function greet() {
+                    alert('¡Hola, mundo!');
+                }
+                </code></pre>
+
+                <h4>Eventos</h4>
+                <p>Los eventos son acciones que ocurren en la página web, como un clic del usuario, y pueden ser
+                    manejados con JavaScript para crear interactividad.</p>
+
+                <pre><code>
+                document.getElementById("myButton").addEventListener("click", function() {
+                    alert('¡Hola, mundo!');
+                });
+                </code></pre>
+            </article>
+
+            <article>
+                <img src="https://via.placeholder.com/800x100?text=Frameworks" alt="Imagen de JavaScript"> <!--Se agrega una imagen sencilla-->
+                <h2>Frameworks: Herramientas Poderosas para Desarrolladores Web</h2>
+                <p>Los frameworks son conjuntos de herramientas y bibliotecas que proporcionan estructuras y
+                    funcionalidades predefinidas para facilitar el desarrollo web. Estos frameworks permiten a los
+                    desarrolladores construir aplicaciones web más rápidamente al proporcionar soluciones
+                    preconfiguradas para tareas comunes como el enrutamiento, la gestión del estado, y la interacción
+                    con servidores.</p>
+                <h3>¿Qué son los Frameworks?</h3>
+                <p>Un framework web es una estructura de software diseñada para facilitar el desarrollo y la
+                    implementación de aplicaciones web. Proporcionan una arquitectura organizada y predefinida que guía
+                    el flujo de trabajo del desarrollo, promoviendo buenas prácticas y patrones de diseño.</p>
+                <h3>Beneficios de Utilizar Frameworks</h3>
+                <ul>
+                    <li><strong>Productividad Mejorada</strong>: Los frameworks proporcionan componentes reutilizables y funciones integradas que aceleran el desarrollo.</li>
+                    <li><strong>Consistencia y Mantenibilidad</strong>: Promueven la estructura organizada del código y facilitan la colaboración en equipos.</li>
+                    <li><strong>Seguridad Mejorada</strong>: Incorporan prácticas de seguridad recomendadas y actualizaciones frecuentes para proteger las aplicaciones.</li>
+                </ul>
+                <h3>Tipos de Frameworks</h3>
+                <ul>
+                    <li><strong>Frontend</strong>: Se centran en la interfaz de usuario y la interacción del cliente en el navegador. Ejemplos populares incluyen React, Angular y Vue.js.</li>
+                    <li><strong>Backend</strong>: Se enfocan en la lógica de negocio y la gestión de datos en el servidor. Ejemplos notables son Express.js para Node.js y Django para Python.</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+            </ul>
+
+            <h3>Posts Recientes</h3>
+            <ul id="recent-posts">
+                <!-- Se llenará con JavaScript -->
+            </ul>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
